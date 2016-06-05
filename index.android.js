@@ -1,30 +1,34 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
-  Text,
+  Text, Navigator,
   View
 } from 'react-native';
+import Library from './Library';
+import ExplorationView from './ExplorationView';
+import ExplorationPlayer from './ExplorationPlayer';
+import ExplorationFinish from './ExplorationFinish';
 
 class Oppia extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <Navigator
+          initialRoute={{
+              name: 'Home',
+          }}
+          renderScene={(route, navigator) => {
+            if(route.name === 'Home') {
+              return <Library navigator={navigator} />
+            } else if(route.name === 'ExpView') {
+              return <ExplorationView navigator={navigator} exp={route.exp} />
+            } else if(route.name === 'ExpPlayer') {
+              return <ExplorationPlayer navigator={navigator} exp={route.exp} />
+            } else if(route.name === 'ExpFinish') {
+              return <ExplorationFinish navigator={navigator} exp={route.exp} />
+            }
+          }}
+      />
     );
   }
 }
