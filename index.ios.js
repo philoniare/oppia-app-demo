@@ -7,6 +7,8 @@ import {
 } from 'react-native';
 import Library from './Library';
 import ExplorationView from './ExplorationView';
+import ExplorationPlayer from './ExplorationPlayer';
+import ExplorationFinish from './ExplorationFinish';
 
 class Oppia extends Component {
   render() {
@@ -20,6 +22,10 @@ class Oppia extends Component {
               return <Library navigator={navigator} />
             } else if(route.name === 'ExpView') {
               return <ExplorationView navigator={navigator} exp={route.exp} />
+            } else if(route.name === 'ExpPlayer') {
+              return <ExplorationPlayer navigator={navigator} exp={route.exp} />
+            } else if(route.name === 'ExpFinish') {
+              return <ExplorationFinish navigator={navigator} exp={route.exp} />
             }
           }}
       />

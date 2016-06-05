@@ -1,6 +1,6 @@
 import React, { Component, } from 'react'
 import { View, StyleSheet, Text, ListView, 
-        TouchableHighlight,
+        TouchableHighlight, Navigator,
         Image} from 'react-native'
 import NavigationBar from 'react-native-navbar'
 
@@ -43,11 +43,10 @@ class Library extends Component {
     console.log("Search clicked");
   }
   
-  _pressRow() {
+  _pressRow(exp) {
     this.props.navigator.push({
       name: 'ExpView',
-      backButtonTitle: 'Library',
-      exploration: exp,
+      exp: exp,
     });
   }
   

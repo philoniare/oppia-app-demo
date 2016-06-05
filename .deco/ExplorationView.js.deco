@@ -3,28 +3,12 @@
 		{
 			"range": {
 				"from": {
-					"line": 78,
-					"ch": 26
+					"line": 20,
+					"ch": 60
 				},
 				"to": {
-					"line": 78,
-					"ch": 41
-				}
-			},
-			"editWith": "inputField",
-			"type": "string",
-			"name": "Title",
-			"group": "REACT NATIVE NAVBAR"
-		},
-		{
-			"range": {
-				"from": {
-					"line": 78,
-					"ch": 54
-				},
-				"to": {
-					"line": 78,
-					"ch": 61
+					"line": 20,
+					"ch": 67
 				}
 			},
 			"editWith": "colorPicker",
@@ -35,11 +19,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 79,
+					"line": 21,
 					"ch": 53
 				},
 				"to": {
-					"line": 79,
+					"line": 21,
 					"ch": 60
 				}
 			},
@@ -51,11 +35,27 @@
 		{
 			"range": {
 				"from": {
-					"line": 80,
+					"line": 22,
+					"ch": 52
+				},
+				"to": {
+					"line": 22,
+					"ch": 59
+				}
+			},
+			"editWith": "colorPicker",
+			"type": "string",
+			"name": "Title Color",
+			"group": "REACT NATIVE NAVBAR"
+		},
+		{
+			"range": {
+				"from": {
+					"line": 23,
 					"ch": 36
 				},
 				"to": {
-					"line": 80,
+					"line": 23,
 					"ch": 55
 				}
 			},
@@ -67,11 +67,11 @@
 		{
 			"range": {
 				"from": {
-					"line": 81,
+					"line": 24,
 					"ch": 34
 				},
 				"to": {
-					"line": 81,
+					"line": 24,
 					"ch": 53
 				}
 			},
